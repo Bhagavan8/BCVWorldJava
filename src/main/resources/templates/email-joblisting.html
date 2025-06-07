@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Job Opportunities - BCVWorld</title>
+    <style type="text/css">
+        /* Base styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333333;
+        }
+        
+        /* Main container */
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .header-text {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Content */
+        .content {
+            padding: 25px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+            color: #4a5568;
+        }
+        
+        /* Job Listing Styles */
+        .job-container {
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 18px;
+            margin-bottom: 20px;
+            background-color: #f8fafc;
+        }
+        
+        .job-title {
+            color: #2c3e50;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+        }
+        
+        .job-company {
+            color: #4a5568;
+            font-size: 15px;
+            margin: 0 0 8px 0;
+            font-weight: 500;
+        }
+        
+        .job-details {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            gap: 10px;
+        }
+        
+        .job-detail {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #4a5568;
+        }
+        
+        .job-detail i {
+            margin-right: 5px;
+            color: #4b6cb7;
+        }
+        
+        .job-skills {
+            margin: 12px 0;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 6px;
+        }
+        
+        .skill-tag {
+            background-color: #e2e8f0;
+            color: #2c3e50;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+        }
+        
+        .job-description {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #4a5568;
+            margin-bottom: 15px;
+        }
+        
+        .fresher-highlight {
+            color: #2b6cb0;
+            font-weight: 600;
+        }
+        
+        .view-job-btn {
+            display: inline-block;
+            background-color: #4b6cb7;
+            color: white !important;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        /* Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #4b6cb7, #3a56a0);
+            color: white !important;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 12px 28px;
+            border-radius: 30px;
+            margin: 18px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(75, 108, 183, 0.3);
+            font-size: 15px;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #2d3748;
+            color: #e2e8f0;
+            padding: 25px 20px;
+            text-align: center;
+        }
+        
+        .social-icons {
+            margin: 18px 0;
+        }
+        
+        .social-icon {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            margin: 0 6px;
+            text-align: center;
+            line-height: 36px;
+        }
+        
+        .whatsapp { background-color: #25D366; }
+        .linkedin { background-color: #0077B5; }
+        .instagram { background: linear-gradient(45deg, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D); }
+        
+        .footer-links {
+            margin: 18px 0;
+            line-height: 1.6;
+        }
+        
+        .footer-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+        
+        .copyright {
+            font-size: 11px;
+            color: #a0aec0;
+            margin-top: 18px;
+            line-height: 1.5;
+        }
+        
+        /* Responsive */
+        @media only screen and (max-width: 600px) {
+            .content {
+                padding: 20px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .header-text {
+                font-size: 24px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            p {
+                font-size: 14px;
+            }
+            
+            .job-title {
+                font-size: 17px;
+            }
+            
+            .job-company, .job-description {
+                font-size: 14px;
+            }
+            
+            .job-details {
+                gap: 8px;
+            }
+            
+            .job-detail {
+                font-size: 13px;
+            }
+            
+            .cta-button {
+                display: block;
+                margin: 20px auto;
+                padding: 12px 24px;
+            }
+            
+            .footer {
+                padding: 20px 15px;
+            }
+            
+            .social-icon {
+                width: 34px;
+                height: 34px;
+                line-height: 34px;
+                margin: 0 4px;
+            }
+            
+            .footer-links a {
+                font-size: 12px;
+                margin: 0 6px;
+            }
+        }
+    </style>
+</head>
+<body style="margin:0; padding:0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f5f7fa; color: #333333;">
+    <!-- Main Container -->
+    <center>
+        <table class="email-container" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <!-- Header -->
+            <tr>
+                <td class="header">
+                    <h1 class="header-text" style="color:#ffffff; font-size:28px; font-weight:700; margin:0; letter-spacing:0.5px;">BCVWorld</h1>
+                </td>
+            </tr>
+            
+            <!-- Content -->
+            <tr>
+                <td class="content">
+                    <h1 style="color:#2c3e50; margin-top:0; font-size:24px; font-weight:600; line-height:1.3;">New Job Opportunities For You</h1>
+                    
+                    <p style="font-size:15px; line-height:1.5; margin-bottom:18px; color:#4a5568;">
+                        Hello <span th:text="${name}"></span>, we found these exciting job opportunities matching your profile:
+                    </p>
+                    
+                    <!-- Dynamic Job Listings -->
+                    <div th:each="job : ${jobs}" class="job-container" style="border:1px solid #e2e8f0; border-radius:6px; padding:18px; margin-bottom:20px; background-color:#f8fafc;">
+                        <h2 class="job-title" style="color:#2c3e50; font-size:18px; font-weight:600; margin:0 0 8px 0;" th:text="${job.title}"></h2>
+                        <p class="job-company" style="color:#4a5568; font-size:15px; margin:0 0 8px 0; font-weight:500;" th:text="${job.company}"></p>
+                        
+                        <div class="job-details" style="display:flex; flex-wrap:wrap; margin:10px 0; gap:10px;">
+                            <span class="job-detail" style="display:flex; align-items:center; font-size:14px; color:#4a5568;">
+                                <i>📍</i> <span th:text="${job.location}"></span>
+                            </span>
+                            
+                            <span th:if="${job.salary}" class="job-detail" style="display:flex; align-items:center; font-size:14px; color:#4a5568;">
+                                <i>💰</i> <span th:text="${job.salary}"></span>
+                            </span>
+                            
+                            <span class="job-detail" style="display:flex; align-items:center; font-size:14px; color:#4a5568;">
+                                <i>⏱️</i> <span th:text="${job.type}"></span>
+                            </span>
+                            
+                            <span th:if="${job.experience}" class="job-detail" style="display:flex; align-items:center; font-size:14px; color:#4a5568;">
+                                <i>📅</i> <span th:text="${job.experience}"></span>
+                            </span>
+                        </div>
+                        
+                        <!-- Skills Section -->
+                        <div th:if="${job.skills and !job.skills.empty}" class="job-skills" style="margin:12px 0;">
+                            <p style="font-weight:600; margin:0 0 6px 0; font-size:14px; color:#2c3e50;">Key Skills:</p>
+                            <div class="skills-container" style="display:flex; flex-wrap:wrap; gap:6px; margin-top:6px;">
+                                <span th:each="skill : ${job.skills}" 
+                                      class="skill-tag" 
+                                      style="background-color:#e2e8f0; color:#2c3e50; padding:4px 10px; border-radius:12px; font-size:13px;"
+                                      th:text="${skill}"></span>
+                            </div>
+                        </div>
+                        
+                        <!-- Dynamic Description -->
+                        <div th:if="${job.description}">
+                            <p th:if="${job.isFresher}" class="job-description" style="font-size:14px; line-height:1.5; color:#4a5568; margin-bottom:15px;">
+                                <span class="fresher-highlight" style="color:#2b6cb0; font-weight:600;">Great opportunity for freshers!</span> 
+                                <span th:text="${job.description}"></span>
+                            </p>
+                            <p th:unless="${job.isFresher}" class="job-description" style="font-size:14px; line-height:1.5; color:#4a5568; margin-bottom:15px;">
+                                <span th:text="${job.description}"></span>
+                            </p>
+                        </div>
+                        
+                        <a th:href="${job.applyLink}" class="view-job-btn" style="display:inline-block; background-color:#4b6cb7; color:white !important; text-decoration:none; padding:8px 20px; border-radius:4px; font-size:14px; font-weight:500;">View Job Details</a>
+                    </div>
+                   
+                    <center>
+                        <a href="https://bcvworld.com/html/jobs.html" class="cta-button" style="display:inline-block; background:linear-gradient(135deg, #4b6cb7, #3a56a0); color:white !important; text-decoration:none; font-weight:600; padding:12px 28px; border-radius:30px; margin:18px 0; text-align:center; box-shadow:0 4px 12px rgba(75, 108, 183, 0.3); font-size:15px;">Browse More Jobs</a>
+                    </center>
+                    
+                    <p style="font-size:15px; line-height:1.5; margin-bottom:0; color:#4a5568;">
+                        Want better matches? <a href="https://bcvworld.com/pages/profile.html" style="color:#4b6cb7; text-decoration:underline;">Update your profile</a> with your latest skills.
+                    </p>
+                    
+                    <p style="font-size:15px; line-height:1.5; margin:20px 0 0 0; color:#4a5568;">
+                        Happy job hunting!
+                    </p>
+                    
+                    <p style="font-size:15px; line-height:1.5; margin:5px 0 0 0; color:#4a5568;">
+                        Best regards,<br>
+                        <strong>The Team at BCVWorld</strong>
+                    </p>
+                </td>
+            </tr>
+            
+            <!-- Footer -->
+            <tr>
+                <td class="footer" style="background-color:#2d3748; color:#e2e8f0; padding:25px 20px; text-align:center;">
+                    <p style="margin:0 0 15px 0; font-size:14px; color:#e2e8f0;">Connect with us on:</p>
+                    
+                    <div class="social-icons" style="margin:18px 0;">
+                        <!-- WhatsApp -->
+                        <a href="https://chat.whatsapp.com/HyIFJGSIBru1AmgQuRHwI8" class="social-icon whatsapp" style="display:inline-block; width:36px; height:36px; border-radius:50%; margin:0 6px; text-align:center; line-height:36px; background-color:#25D366;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp" width="18" height="18" style="vertical-align:middle;">
+                        </a>
+                        
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/bcv-world-7a294235a/" class="social-icon linkedin" style="display:inline-block; width:36px; height:36px; border-radius:50%; margin:0 6px; text-align:center; line-height:36px; background-color:#0077B5;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn" width="18" height="18" style="vertical-align:middle;">
+                        </a>
+                        
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/bcvworld18/" class="social-icon instagram" style="display:inline-block; width:36px; height:36px; border-radius:50%; margin:0 6px; text-align:center; line-height:36px; background:linear-gradient(45deg, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D);">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="18" height="18" style="vertical-align:middle;">
+                        </a>
+                    </div>
+                    
+                    <div class="footer-links" style="margin:18px 0; line-height:1.6;">
+                        <a href="https://bcvworld.com" style="color:#e2e8f0; text-decoration:none; margin:0 8px; font-size:13px; white-space:nowrap;">Our Website</a>
+                        <span style="color:#a0aec0;">|</span>
+                        <a href="https://bcvworld.com/html/jobs.html" style="color:#e2e8f0; text-decoration:none; margin:0 8px; font-size:13px; white-space:nowrap;">Browse Jobs</a>
+                        <span style="color:#a0aec0;">|</span>
+                        <a href="https://bcvworld.com/html/contact.html" style="color:#e2e8f0; text-decoration:none; margin:0 8px; font-size:13px; white-space:nowrap;">Contact Us</a>
+                        <span style="color:#a0aec0;">|</span>
+                        <a href="https://bcvworld.com/html/privacy.html" style="color:#e2e8f0; text-decoration:none; margin:0 8px; font-size:13px; white-space:nowrap;">Privacy Policy</a>
+                    </div>
+                    
+                    <p class="copyright" style="font-size:11px; color:#a0aec0; margin-top:18px; line-height:1.5;">
+                        © 2025 BCVWorld. All rights reserved.<br>
+                        You're receiving this email because you registered on BCVWorld.<br>
+                        <a href="https://bcvworld.com/unsubscribe" style="color:#a0aec0; text-decoration:underline; font-size:11px;">Unsubscribe</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
