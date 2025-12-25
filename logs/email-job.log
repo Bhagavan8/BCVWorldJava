@@ -1,115 +1,242 @@
-2025-06-07T18:20:36.787+05:30  INFO 35772 --- [BCVWorld] [main] com.bcv.world.BcvWorldApplication        : Starting BcvWorldApplication using Java 17.0.11 with PID 35772 (D:\LearningInterview\BCVWorld\target\classes started by Bhagavan in D:\LearningInterview\BCVWorld)
-2025-06-07T18:20:36.795+05:30  INFO 35772 --- [BCVWorld] [main] com.bcv.world.BcvWorldApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-06-07T18:20:37.965+05:30  INFO 35772 --- [BCVWorld] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-07T18:20:38.082+05:30  INFO 35772 --- [BCVWorld] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interface.
-2025-06-07T18:20:38.993+05:30  INFO 35772 --- [BCVWorld] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-07T18:20:39.019+05:30  INFO 35772 --- [BCVWorld] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-07T18:20:39.020+05:30  INFO 35772 --- [BCVWorld] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-06-07T18:20:39.155+05:30  INFO 35772 --- [BCVWorld] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-07T18:20:39.156+05:30  INFO 35772 --- [BCVWorld] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2278 ms
-2025-06-07T18:20:39.435+05:30  INFO 35772 --- [BCVWorld] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-07T18:20:39.566+05:30  INFO 35772 --- [BCVWorld] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-06-07T18:20:39.645+05:30  INFO 35772 --- [BCVWorld] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-07T18:20:40.237+05:30  INFO 35772 --- [BCVWorld] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-07T18:20:40.302+05:30  INFO 35772 --- [BCVWorld] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-07T18:20:40.764+05:30  INFO 35772 --- [BCVWorld] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19f497aa
-2025-06-07T18:20:40.768+05:30  INFO 35772 --- [BCVWorld] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-07T18:20:41.036+05:30  WARN 35772 --- [BCVWorld] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-07T18:20:41.083+05:30  INFO 35772 --- [BCVWorld] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.37
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-06-07T18:20:42.591+05:30  INFO 35772 --- [BCVWorld] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-07T18:20:42.718+05:30  INFO 35772 --- [BCVWorld] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-07T18:20:43.389+05:30  WARN 35772 --- [BCVWorld] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-07T18:20:44.106+05:30  INFO 35772 --- [BCVWorld] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-06-07T18:20:44.121+05:30  INFO 35772 --- [BCVWorld] [main] com.bcv.world.BcvWorldApplication        : Started BcvWorldApplication in 8.206 seconds (process running for 10.093)
-2025-06-07T18:29:28.724+05:30  INFO 35772 --- [BCVWorld] [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-06-07T18:29:28.728+05:30  INFO 35772 --- [BCVWorld] [RMI TCP Connection(19)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-07T18:29:28.835+05:30  INFO 35772 --- [BCVWorld] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-06-07T18:29:28.840+05:30  INFO 35772 --- [BCVWorld] [RMI TCP Connection(19)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-07T18:29:28.845+05:30  INFO 35772 --- [BCVWorld] [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-07T18:29:28.856+05:30  INFO 35772 --- [BCVWorld] [RMI TCP Connection(19)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-07T18:29:33.189+05:30  INFO 37564 --- [BCVWorld] [main] com.bcv.world.BcvWorldApplication        : Starting BcvWorldApplication using Java 17.0.11 with PID 37564 (D:\LearningInterview\BCVWorld\target\classes started by Bhagavan in D:\LearningInterview\BCVWorld)
-2025-06-07T18:29:33.193+05:30  INFO 37564 --- [BCVWorld] [main] com.bcv.world.BcvWorldApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-06-07T18:29:34.172+05:30  INFO 37564 --- [BCVWorld] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-07T18:29:34.271+05:30  INFO 37564 --- [BCVWorld] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interface.
-2025-06-07T18:29:35.099+05:30  INFO 37564 --- [BCVWorld] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-07T18:29:35.123+05:30  INFO 37564 --- [BCVWorld] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-07T18:29:35.123+05:30  INFO 37564 --- [BCVWorld] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-06-07T18:29:35.251+05:30  INFO 37564 --- [BCVWorld] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-07T18:29:35.251+05:30  INFO 37564 --- [BCVWorld] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1989 ms
-2025-06-07T18:29:35.494+05:30  INFO 37564 --- [BCVWorld] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-07T18:29:35.579+05:30  INFO 37564 --- [BCVWorld] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-06-07T18:29:35.638+05:30  INFO 37564 --- [BCVWorld] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-07T18:29:36.106+05:30  INFO 37564 --- [BCVWorld] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-07T18:29:36.156+05:30  INFO 37564 --- [BCVWorld] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-07T18:29:36.409+05:30  INFO 37564 --- [BCVWorld] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@727dcc64
-2025-06-07T18:29:36.412+05:30  INFO 37564 --- [BCVWorld] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-07T18:29:36.505+05:30  WARN 37564 --- [BCVWorld] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-07T18:29:36.538+05:30  INFO 37564 --- [BCVWorld] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.37
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-06-07T18:29:37.823+05:30  INFO 37564 --- [BCVWorld] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-07T18:29:37.918+05:30  INFO 37564 --- [BCVWorld] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-07T18:29:38.500+05:30  WARN 37564 --- [BCVWorld] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-07T18:29:39.128+05:30  INFO 37564 --- [BCVWorld] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-06-07T18:29:39.142+05:30  INFO 37564 --- [BCVWorld] [main] com.bcv.world.BcvWorldApplication        : Started BcvWorldApplication in 6.663 seconds (process running for 7.922)
-2025-06-07T18:29:59.464+05:30  INFO 37564 --- [BCVWorld] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2025-06-07T18:29:59.468+05:30  INFO 37564 --- [BCVWorld] [RMI TCP Connection(8)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-07T18:29:59.591+05:30  INFO 37564 --- [BCVWorld] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-06-07T18:29:59.596+05:30  INFO 37564 --- [BCVWorld] [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-06-07T18:29:59.600+05:30  INFO 37564 --- [BCVWorld] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-06-07T18:29:59.610+05:30  INFO 37564 --- [BCVWorld] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-06-07T18:30:03.896+05:30  INFO 37676 --- [BCVWorld] [main] com.bcv.world.BcvWorldApplication        : Starting BcvWorldApplication using Java 17.0.11 with PID 37676 (D:\LearningInterview\BCVWorld\target\classes started by Bhagavan in D:\LearningInterview\BCVWorld)
-2025-06-07T18:30:03.900+05:30  INFO 37676 --- [BCVWorld] [main] com.bcv.world.BcvWorldApplication        : No active profile set, falling back to 1 default profile: "default"
-2025-06-07T18:30:04.929+05:30  INFO 37676 --- [BCVWorld] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-06-07T18:30:05.031+05:30  INFO 37676 --- [BCVWorld] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
-2025-06-07T18:30:05.834+05:30  INFO 37676 --- [BCVWorld] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-06-07T18:30:05.855+05:30  INFO 37676 --- [BCVWorld] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-06-07T18:30:05.856+05:30  INFO 37676 --- [BCVWorld] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
-2025-06-07T18:30:05.975+05:30  INFO 37676 --- [BCVWorld] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-06-07T18:30:05.976+05:30  INFO 37676 --- [BCVWorld] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2005 ms
-2025-06-07T18:30:06.210+05:30  INFO 37676 --- [BCVWorld] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-06-07T18:30:06.295+05:30  INFO 37676 --- [BCVWorld] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
-2025-06-07T18:30:06.351+05:30  INFO 37676 --- [BCVWorld] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-06-07T18:30:06.812+05:30  INFO 37676 --- [BCVWorld] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-06-07T18:30:06.865+05:30  INFO 37676 --- [BCVWorld] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-06-07T18:30:07.108+05:30  INFO 37676 --- [BCVWorld] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15371de2
-2025-06-07T18:30:07.112+05:30  INFO 37676 --- [BCVWorld] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-06-07T18:30:07.226+05:30  WARN 37676 --- [BCVWorld] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-06-07T18:30:07.260+05:30  INFO 37676 --- [BCVWorld] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0.37
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-06-07T18:30:08.552+05:30  INFO 37676 --- [BCVWorld] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-06-07T18:30:08.642+05:30  INFO 37676 --- [BCVWorld] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-06-07T18:30:09.191+05:30  WARN 37676 --- [BCVWorld] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-06-07T18:30:09.824+05:30  INFO 37676 --- [BCVWorld] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-06-07T18:30:09.838+05:30  INFO 37676 --- [BCVWorld] [main] com.bcv.world.BcvWorldApplication        : Started BcvWorldApplication in 6.663 seconds (process running for 7.912)
-2025-06-07T18:39:37.107+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-07T18:39:37.108+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-06-07T18:39:37.110+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-06-07T18:39:53.728+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] c.bcv.world.controller.EmailController   : Fetched 8 users from Firebase
-2025-06-07T18:39:54.906+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : virajmoger@gmail.com
-2025-06-07T18:39:55.104+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] c.bcv.world.service.UserDetailsService   : Inserted new user: sreenivasad36@gmail.com
-2025-06-07T18:39:55.122+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : hdvijetha@gmail.com
-2025-06-07T18:39:55.127+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mubarak84811@gmail.com
-2025-06-07T18:39:55.135+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : manjunathaum7892@gmail.com
-2025-06-07T18:39:55.142+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : help.bcv@bcvworld.com
-2025-06-07T18:39:55.149+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : bhagavancv@gmail.com
-2025-06-07T18:39:55.156+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : jyothi6690@gmail.com
-2025-06-07T18:40:25.637+05:30  INFO 37676 --- [BCVWorld] [http-nio-8080-exec-2] c.bcv.world.service.UserDetailsService   : Email sent to: sreenivasad36@gmail.com
+2025-12-25T03:32:11.700+05:30  WARN 36288 --- [BCVWorld] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h39m51s240ms634µs100ns).
+2025-12-25T08:15:36.468+05:30  WARN 36288 --- [BCVWorld] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h42m54s637ms363µs100ns).
+2025-12-25T08:33:04.143+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] com.bcv.world.service.FirebaseService    : Fetching users from Firestore collection: users
+2025-12-25T08:33:07.755+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] com.bcv.world.service.FirebaseService    : Total documents fetched from Firestore: 232
+2025-12-25T08:33:07.759+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] com.bcv.world.service.FirebaseService    : Users data mapping completed
+2025-12-25T08:33:07.759+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.controller.EmailController   : Fetched 232 users from Firebase
+2025-12-25T08:33:08.141+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : soundarayasrijs@gmail.com
+2025-12-25T08:33:08.147+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sirisiri3821@gmail.com
+2025-12-25T08:33:08.152+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : rambharath820@gmail.com
+2025-12-25T08:33:08.159+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : pandeymeenu169@gmail.com
+2025-12-25T08:33:08.163+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : harigurunathan248@gmail.com
+2025-12-25T08:33:08.168+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : yaikuntamvaralakshmi@gmail.com
+2025-12-25T08:33:08.173+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : Snehanayaka07@gmail.com
+2025-12-25T08:33:08.178+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : moveshmuruganantham3@gmail.com
+2025-12-25T08:33:08.183+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : akhilapolavarapu@gmail.com
+2025-12-25T08:33:08.188+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ramadevi.chinta9494@gmail.com
+2025-12-25T08:33:08.193+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : naveed7993438260@gmail.com
+2025-12-25T08:33:08.198+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sanjayparameshwaran23@gmail.com
+2025-12-25T08:33:08.203+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mohdihtesham75@gmail.com
+2025-12-25T08:33:08.208+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : hardikdhaya33@gmail.com
+2025-12-25T08:33:08.212+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : reddynarendar145@gmail.com
+2025-12-25T08:33:08.217+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : bhagavancv8@gmail.com
+2025-12-25T08:33:08.224+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : shailu.vaddimaneni@gmail.com
+2025-12-25T08:33:08.227+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : swetharajappa94@gmail.com
+2025-12-25T08:33:08.232+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kirubahari0831@gmail.com
+2025-12-25T08:33:08.238+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : abhshekd0215@gmail.com
+2025-12-25T08:33:08.244+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : amuthxn28@gmail.com
+2025-12-25T08:33:08.248+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : nishaprajapathi94@gmail.com
+2025-12-25T08:33:08.254+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : goreamey9@gmail.com
+2025-12-25T08:33:08.259+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : velanginiraju1999@gmail.com
+2025-12-25T08:33:08.262+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ramtejgourishetty@gmail.com
+2025-12-25T08:33:08.267+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : manosanto1999@gmail.com
+2025-12-25T08:33:08.270+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : pujabehara24@gmail.com
+2025-12-25T08:33:08.275+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : manoharreddy28950@gmail.com
+2025-12-25T08:33:08.280+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : shrutigirhe155@gmail.com
+2025-12-25T08:33:08.283+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sunnyjitendra36@gmail.com
+2025-12-25T08:33:08.286+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : abhi.pinku66@gmail.com
+2025-12-25T08:33:08.291+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kummarikuntlanavya2003@gmail.com
+2025-12-25T08:33:08.403+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Inserted new user: sanjaisivakumar1412@gmail.com
+2025-12-25T08:33:08.408+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : tejaswinics04@gmail.com
+2025-12-25T08:33:08.413+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : snehalathabokkasam0909@gmail.com
+2025-12-25T08:33:08.417+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : raghuldev21@gmail.com
+2025-12-25T08:33:08.425+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : nizampatnamsrinu01@gmail.com
+2025-12-25T08:33:08.429+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : lipsapradhan5300@gmail.com
+2025-12-25T08:33:08.435+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : akshajthayyil313@gmail.com
+2025-12-25T08:33:08.442+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : maheedharagraharam@gmail.com
+2025-12-25T08:33:08.447+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : syedfarnaz2004@gmail.com
+2025-12-25T08:33:08.451+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : cvbhagavan8@gmail.com
+2025-12-25T08:33:08.456+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : rahulmaji0497@gmail.com
+2025-12-25T08:33:08.461+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : priyankmoon124@gmail.com
+2025-12-25T08:33:08.466+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : bishtpankaj706@gmail.com
+2025-12-25T08:33:08.469+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sahanasakthivel19@gmail.com
+2025-12-25T08:33:08.476+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : shwetavanave707@gmail.com
+2025-12-25T08:33:08.482+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : silayabharathi2003@gmail.com
+2025-12-25T08:33:08.488+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mohitsuthar160@gmail.com
+2025-12-25T08:33:08.493+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : krishna.sai7254@gmail.com
+2025-12-25T08:33:08.498+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : tvinoth07072002@gmail.com
+2025-12-25T08:33:08.507+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ranjanaarumugam2109@gmail.com
+2025-12-25T08:33:08.513+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mandabrahmasrisainaveen@gmail.com
+2025-12-25T08:33:08.516+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : akahayaakahayavv@gmail.com
+2025-12-25T08:33:08.524+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ram.sivaraj2002@gmail.com
+2025-12-25T08:33:08.529+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : bindhupriyacherupally@gmail.com
+2025-12-25T08:33:08.534+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : jyothireddi2001@gmail.com
+2025-12-25T08:33:08.541+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : madhuhari2004@gmail.com
+2025-12-25T08:33:08.545+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : cleosylvester2004@gmail.com
+2025-12-25T08:33:08.550+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sujatadhage46@gmail.com
+2025-12-25T08:33:08.555+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sahithiaakula57@gmail.com
+2025-12-25T08:33:08.560+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : alfiyaalluz123@gmail.com
+2025-12-25T08:33:08.565+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : chalamhemanth1430@gmail.com
+2025-12-25T08:33:08.634+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : deepadharshiniram@gmail.com
+2025-12-25T08:33:08.637+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : harshinirudraraju@gmail.com
+2025-12-25T08:33:08.643+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : chithrabeeragownivari@gmail.com
+2025-12-25T08:33:08.648+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kumarnikhil0278@gmail.com
+2025-12-25T08:33:08.652+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : abhaysinghh16@gmail.com
+2025-12-25T08:33:08.656+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : poornimadyamanna@gmail.com
+2025-12-25T08:33:08.661+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : srilathaj14@gmail.com
+2025-12-25T08:33:08.665+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ranshrungarevinod@gmail.com
+2025-12-25T08:33:08.670+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : harinikb91@gmail.com
+2025-12-25T08:33:08.674+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : snekhajeyachandran1206@gmail.com
+2025-12-25T08:33:08.679+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sudha6322sk@gmail.com
+2025-12-25T08:33:08.682+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kusurumahesh2003@gmail.com
+2025-12-25T08:33:08.687+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : preranajain8888@gmail.com
+2025-12-25T08:33:08.692+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : pavee0711@gmail.com
+2025-12-25T08:33:08.695+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sonauday04@gmail.com
+2025-12-25T08:33:08.700+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : theusernamestark001@gmail.com
+2025-12-25T08:33:08.705+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sameerabd386@gmail.com
+2025-12-25T08:33:08.710+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : amathanraj009@gmail.com
+2025-12-25T08:33:08.713+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kalavakurisivaiah7@gmail.com
+2025-12-25T08:33:08.718+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : virajmoger@gmail.com
+2025-12-25T08:33:08.722+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : navithachoudhary116@gmail.com
+2025-12-25T08:33:08.728+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sreenivasad36@gmail.com
+2025-12-25T08:33:08.729+05:30  WARN 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.controller.EmailController   : Skipped user with missing email or name: {uid=KnFXcIS0n7VdPrqUuxpcDObM9Qu1, createdAt=2025-10-06T11:08:26.747Z, role=user, name=Movesh M, isActive=true, email=moveshking143@gmail.com}
+2025-12-25T08:33:08.734+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : navaneelu2002@gmail.com
+2025-12-25T08:33:08.737+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kaniv8843@gmail.com
+2025-12-25T08:33:08.742+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : vanabhavya2412@gmail.com
+2025-12-25T08:33:08.747+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : abdulbeece21@gmail.com
+2025-12-25T08:33:08.752+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ayeshags0128@gmail.com
+2025-12-25T08:33:08.757+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : premarsomannavar@gmail.com
+2025-12-25T08:33:08.762+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : hdvijetha@gmail.com
+2025-12-25T08:33:08.766+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : bhagavan1811@gmail.com
+2025-12-25T08:33:08.771+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mubarak84811@gmail.com
+2025-12-25T08:33:08.777+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : srujanbhat94@gmail.com
+2025-12-25T08:33:08.780+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : hanmanthh498@gmail.com
+2025-12-25T08:33:08.785+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : vadivelsamreetha@gmail.com
+2025-12-25T08:33:08.790+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : tmounika003@gmail.com
+2025-12-25T08:33:08.794+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : vishnuprasath0706@gmail.com
+2025-12-25T08:33:08.800+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : rohitdasari1843@gmail.com
+2025-12-25T08:33:08.805+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sunkaraswathi191@gmail.com
+2025-12-25T08:33:08.809+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sireesha.kota960@gmail.com
+2025-12-25T08:33:08.814+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : pbhuvana13@gmail.com
+2025-12-25T08:33:08.818+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : renukavirothi2005@gmail.com
+2025-12-25T08:33:08.822+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : vishnupatrunitanuja@gmail.com
+2025-12-25T08:33:08.827+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : shanthag148@gmail.com
+2025-12-25T08:33:08.832+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sonikagowda100@gmail.com
+2025-12-25T08:33:08.836+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : manjunathaum7892@gmail.com
+2025-12-25T08:33:08.841+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : cheruvulaakhila096@gmail.com
+2025-12-25T08:33:08.846+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : lakshmiswathika0830@gmail.com
+2025-12-25T08:33:08.851+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : khadarhumera81@gmail.com
+2025-12-25T08:33:08.854+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : binginagalalitha@gmail.com
+2025-12-25T08:33:08.858+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : spandanarao0330@gmail.com
+2025-12-25T08:33:08.864+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : bhingardeveabhijeet1@gmail.com
+2025-12-25T08:33:08.868+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : shrikanttawade17@gmail.com
+2025-12-25T08:33:08.871+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : balusathym@gmail.com
+2025-12-25T08:33:08.877+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : bhagavancv95@gmail.com
+2025-12-25T08:33:08.881+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : yuvashreej718@gmail.com
+2025-12-25T08:33:08.885+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : hardiksandy33@gmail.com
+2025-12-25T08:33:08.888+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : spandanagolkonda01@gmail.com
+2025-12-25T08:33:08.895+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : nalasritharan03@gmail.com
+2025-12-25T08:33:08.899+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : jothipriyakarthi2002@gmail.com
+2025-12-25T08:33:08.902+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : chmahalakshmi021@gmail.com
+2025-12-25T08:33:08.906+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sahananimbalakar@gmail.com
+2025-12-25T08:33:08.911+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : rahulmaji2511@gmail.com
+2025-12-25T08:33:08.915+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : pavitrap102@gmail.com
+2025-12-25T08:33:08.920+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : omkar19rov@gmail.com
+2025-12-25T08:33:08.925+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : shavithark2004@gmail.com
+2025-12-25T08:33:08.930+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : nallasrivani2000@gmail.com
+2025-12-25T08:33:08.933+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mrshoaibmalik01@gmail.com
+2025-12-25T08:33:08.938+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kabadiharshita@gmail.com
+2025-12-25T08:33:08.942+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : swathibala16@gmail.com
+2025-12-25T08:33:08.947+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ramzanibram01@gmail.com
+2025-12-25T08:33:08.952+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sangeelalith08@gmail.com
+2025-12-25T08:33:08.990+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : anu56055@gmail.com
+2025-12-25T08:33:08.996+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : jayanthkumaras25122003@gmail.com
+2025-12-25T08:33:08.999+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : vishalmangalesh@gmail.com
+2025-12-25T08:33:09.003+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : vivek402276@gmail.com
+2025-12-25T08:33:09.008+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : jahnaviveluru2004@gmail.com
+2025-12-25T08:33:09.012+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : tapaswinisahoo2005@gmail.com
+2025-12-25T08:33:09.016+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : thulasirajankarthi@gmail.com
+2025-12-25T08:33:09.018+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : devateja1@gmail.com
+2025-12-25T08:33:09.021+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mdjuberbepari18@gmail.com
+2025-12-25T08:33:09.026+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : jkraju1100@gmail.com
+2025-12-25T08:33:09.030+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kittushaik7@gmail.com
+2025-12-25T08:33:09.034+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : rgniteshraj@gmail.com
+2025-12-25T08:33:09.037+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : help.bcv@bcvworld.com
+2025-12-25T08:33:09.040+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : karmugilaa.kannan@gmail.com
+2025-12-25T08:33:09.045+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sushmitha102003@gmail.com
+2025-12-25T08:33:09.048+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : avinashavi5357@gmail.com
+2025-12-25T08:33:09.051+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : Kumarjay0614@gmail.com
+2025-12-25T08:33:09.056+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : senthildhinesh4541@gmail.com
+2025-12-25T08:33:09.060+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : gauravtidke2002@gmail.com
+2025-12-25T08:33:09.064+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : rahulsharmaji1432@gmail.com
+2025-12-25T08:33:09.067+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : agraharammaheedhar@gmail.com
+2025-12-25T08:33:09.071+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : akshayapv21@gmail.com
+2025-12-25T08:33:09.075+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : jspch3@gmail.com
+2025-12-25T08:33:09.079+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : pavither4761@gmail.com
+2025-12-25T08:33:09.082+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ssuraj6255@gmail.com
+2025-12-25T08:33:09.085+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : susmitasharmamy@gmail.com
+2025-12-25T08:33:09.088+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : vishalkanna094@gmail.com
+2025-12-25T08:33:09.093+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : krishnakrishnakumar911@gmail.com
+2025-12-25T08:33:09.096+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sriyakommuri04@gmail.com
+2025-12-25T08:33:09.100+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : dnyaneshwariwaikar30@gmail.com
+2025-12-25T08:33:09.103+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mvikrant707@gmail.com
+2025-12-25T08:33:09.108+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : anamkumar2002@gmail.com
+2025-12-25T08:33:09.112+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : eekshitham2001@gmail.com
+2025-12-25T08:33:09.116+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : chandanaks.1si22cs044@gmail.com
+2025-12-25T08:33:09.120+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : 213j1a0333@raghuinstech.com
+2025-12-25T08:33:09.126+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : anshusharma86011@gmail.com
+2025-12-25T08:33:09.128+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : nawaznavvu0@gmail.com
+2025-12-25T08:33:09.131+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : shreyabojamma845@gmail.com
+2025-12-25T08:33:09.137+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : bhavanagowdacs456@gmail.com
+2025-12-25T08:33:09.141+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : balaji150604@gmail.com
+2025-12-25T08:33:09.144+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ghousemoddin20@gmail.com
+2025-12-25T08:33:09.146+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : spandanagm23@gmail.com
+2025-12-25T08:33:09.150+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sivasivarajan9225@gmail.com
+2025-12-25T08:33:09.154+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : prathish630@gmail.com
+2025-12-25T08:33:09.159+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : tatipudilaxmanabhinav@gmail.com
+2025-12-25T08:33:09.162+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kajalhood65@gmail.com
+2025-12-25T08:33:09.166+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mmanikantayadav93@gmail.com
+2025-12-25T08:33:09.169+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : 1234ammu5678@gmail.com
+2025-12-25T08:33:09.174+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : keerthinivasan252@gmail.com
+2025-12-25T08:33:09.177+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : rajeshponugupati256@gmail.com
+2025-12-25T08:33:09.180+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : chimbilichaitanya@gmail.com
+2025-12-25T08:33:09.185+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : vikrantmore4104@gmail.com
+2025-12-25T08:33:09.188+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kavya.anjaliappikonda@gmail.com
+2025-12-25T08:33:09.193+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : srinivasnaiknarayan@gmail.com
+2025-12-25T08:33:09.196+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : yashaswinishetty2002@gmail.com
+2025-12-25T08:33:09.200+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : 02devanshsingh@gmail.com
+2025-12-25T08:33:09.203+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : medisettinavyasri@gmail.com
+2025-12-25T08:33:09.207+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : bhagavancv@gmail.com
+2025-12-25T08:33:09.211+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : suragownimaheshbabu@gmail.com
+2025-12-25T08:33:09.215+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mrhangargi19@gmail.com
+2025-12-25T08:33:09.218+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : srikavi624@gmail.com
+2025-12-25T08:33:09.220+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : rakshitharakshitha66137@gmail.com
+2025-12-25T08:33:09.223+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : Suvegaajeyam73@gmail.com
+2025-12-25T08:33:09.227+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mannerohith3@gmail.com
+2025-12-25T08:33:09.230+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : vaishnaviseshadri93@gmail.com
+2025-12-25T08:33:09.232+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : Anbuarasu2017@gmail.com
+2025-12-25T08:33:09.237+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sowndharsowndhar888@gmail.com
+2025-12-25T08:33:09.240+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : rehanbaig0347@gmail.com
+2025-12-25T08:33:09.242+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sateeshkumar1266@gmail.com
+2025-12-25T08:33:09.247+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : jyoshnadwarasila@gmail.com
+2025-12-25T08:33:09.250+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : pavanattadapavan@gmail.com
+2025-12-25T08:33:09.253+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ssoundarya573@gmail.com
+2025-12-25T08:33:09.258+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : saikumartavva561@gmail.com
+2025-12-25T08:33:09.261+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : mallemahesh77@gmail.com
+2025-12-25T08:33:09.264+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : abhiramvilla85@gmail.com
+2025-12-25T08:33:09.268+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : manasishete1305@gmail.com
+2025-12-25T08:33:09.272+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : pranalibobade24@gmail.com
+2025-12-25T08:33:09.277+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : shivanivadivelu@gmail.com
+2025-12-25T08:33:09.280+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kumarnaveeshs@gmail.com
+2025-12-25T08:33:09.284+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : manoj652003@gmail.com
+2025-12-25T08:33:09.287+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : chintuchimalapenta@gmail.com
+2025-12-25T08:33:09.293+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : tejasbv6@gmail.com
+2025-12-25T08:33:09.296+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sspoovarasan65@gmail.com
+2025-12-25T08:33:09.300+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sathish85526@gmail.com
+2025-12-25T08:33:09.304+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : kjeevitha531@gmail.com
+2025-12-25T08:33:09.309+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : pathanabdullakhan230@gmail.com
+2025-12-25T08:33:09.313+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : keerthana8ks@gmail.com
+2025-12-25T08:33:09.317+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : saikumarkathuroju@gmail.com
+2025-12-25T08:33:09.322+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sshfousiyass@gmail.com
+2025-12-25T08:33:09.327+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : jyothi6690@gmail.com
+2025-12-25T08:33:09.332+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : nikhilmustur1@gmail.com
+2025-12-25T08:33:09.335+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : s.l.prasanna132@gmail.com
+2025-12-25T08:33:09.340+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : vbhuvanashree14@gmail.com
+2025-12-25T08:33:09.345+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : snehalatha93922@gmail.com
+2025-12-25T08:33:09.348+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : ashrafmoosakhan@gmail.com
+2025-12-25T08:33:09.351+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : sanaullasazan@gmail.com
+2025-12-25T08:33:09.356+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Already exists email so skipping : hannakoshy002@gmail.com
+2025-12-25T08:33:09.407+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] com.bcv.world.service.EmailServices      : Sending welcome email to sanjaisivakumar1412@gmail.com
+2025-12-25T08:33:15.375+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] com.bcv.world.service.EmailServices      : Welcome email sent successfully to sanjaisivakumar1412@gmail.com
+2025-12-25T08:33:15.403+05:30  INFO 36288 --- [BCVWorld] [http-nio-8080-exec-8] c.bcv.world.service.UserDetailsService   : Email sent to: sanjaisivakumar1412@gmail.com
+2025-12-25T08:51:00.527+05:30  WARN 36288 --- [BCVWorld] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m39s673ms742µs400ns).

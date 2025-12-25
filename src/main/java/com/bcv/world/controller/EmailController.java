@@ -2,6 +2,7 @@ package com.bcv.world.controller;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,8 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bcv.world.model.UserEmailStatus;
-import com.bcv.world.repository.UserEmailStatusRepository;
+import com.bcv.world.scheduler.JobEmailScheduler;
 import com.bcv.world.service.EmailServices;
 import com.bcv.world.service.FirebaseService;
 import com.bcv.world.service.UserDetailsService;
@@ -30,6 +30,9 @@ public class EmailController {
 
 	@Autowired
 	private UserDetailsService userDetailsService;
+
+	@Autowired
+	private JobEmailScheduler scheduler;
 
 	@GetMapping("/send")
 	public ResponseEntity<String> sendEmail() throws MessagingException {
@@ -58,15 +61,15 @@ public class EmailController {
 
 				userDetailsService.insertUserDetails(email, name);
 			}
-			
-			Integer sentCount=0;
+
+			Integer sentCount = 0;
 
 			ResponseEntity<Integer> responseEntity = userDetailsService.findEmailIDSendEmail();
 			if (responseEntity.getStatusCode().is2xxSuccessful()) {
 				sentCount = responseEntity.getBody();
-			    System.out.println("Total emails sent: " + sentCount);
+				System.out.println("Total emails sent: " + sentCount);
 			} else {
-			    System.out.println("Failed to send emails");
+				System.out.println("Failed to send emails");
 			}
 
 			return ResponseEntity.ok("Emails sent: " + sentCount);
@@ -75,6 +78,12 @@ public class EmailController {
 			logger.error("Error during email processing", e);
 			return ResponseEntity.status(500).body("Error occurred: " + e.getMessage());
 		}
+	}
+
+	@GetMapping("/sendJobs")
+	public String triggerEmailManually() throws ExecutionException, InterruptedException {
+		scheduler.sendEmails();
+		return "Job email process triggered successfully";
 	}
 
 }
